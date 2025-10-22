@@ -48,65 +48,18 @@
             animation: particleFloat 8s linear infinite;
         }
 
-        .particle:nth-child(1) {
-            left: 10%;
-            animation-delay: 0s;
-        }
-
-        .particle:nth-child(2) {
-            left: 20%;
-            animation-delay: 1s;
-        }
-
-        .particle:nth-child(3) {
-            left: 30%;
-            animation-delay: 2s;
-        }
-
-        .particle:nth-child(4) {
-            left: 40%;
-            animation-delay: 3s;
-        }
-
-        .particle:nth-child(5) {
-            left: 50%;
-            animation-delay: 4s;
-        }
-
-        .particle:nth-child(6) {
-            left: 60%;
-            animation-delay: 5s;
-        }
-
-        .particle:nth-child(7) {
-            left: 70%;
-            animation-delay: 1.5s;
-        }
-
-        .particle:nth-child(8) {
-            left: 80%;
-            animation-delay: 2.5s;
-        }
-
-        .particle:nth-child(9) {
-            left: 90%;
-            animation-delay: 3.5s;
-        }
-
-        .particle:nth-child(10) {
-            left: 15%;
-            animation-delay: 0.5s;
-        }
-
-        .particle:nth-child(11) {
-            left: 25%;
-            animation-delay: 1.5s;
-        }
-
-        .particle:nth-child(12) {
-            left: 35%;
-            animation-delay: 2.5s;
-        }
+        .particle:nth-child(1) { left: 10%; animation-delay: 0s; }
+        .particle:nth-child(2) { left: 20%; animation-delay: 1s; }
+        .particle:nth-child(3) { left: 30%; animation-delay: 2s; }
+        .particle:nth-child(4) { left: 40%; animation-delay: 3s; }
+        .particle:nth-child(5) { left: 50%; animation-delay: 4s; }
+        .particle:nth-child(6) { left: 60%; animation-delay: 5s; }
+        .particle:nth-child(7) { left: 70%; animation-delay: 1.5s; }
+        .particle:nth-child(8) { left: 80%; animation-delay: 2.5s; }
+        .particle:nth-child(9) { left: 90%; animation-delay: 3.5s; }
+        .particle:nth-child(10) { left: 15%; animation-delay: 0.5s; }
+        .particle:nth-child(11) { left: 25%; animation-delay: 1.5s; }
+        .particle:nth-child(12) { left: 35%; animation-delay: 2.5s; }
 
         .floating-hearts {
             position: absolute;
@@ -123,50 +76,15 @@
             opacity: 0.7;
         }
 
-        .heart-float:nth-child(1) {
-            left: 10%;
-            animation-delay: 0s;
-        }
-
-        .heart-float:nth-child(2) {
-            left: 20%;
-            animation-delay: 1s;
-        }
-
-        .heart-float:nth-child(3) {
-            left: 30%;
-            animation-delay: 2s;
-        }
-
-        .heart-float:nth-child(4) {
-            left: 40%;
-            animation-delay: 3s;
-        }
-
-        .heart-float:nth-child(5) {
-            left: 50%;
-            animation-delay: 4s;
-        }
-
-        .heart-float:nth-child(6) {
-            left: 60%;
-            animation-delay: 5s;
-        }
-
-        .heart-float:nth-child(7) {
-            left: 70%;
-            animation-delay: 1.5s;
-        }
-
-        .heart-float:nth-child(8) {
-            left: 80%;
-            animation-delay: 2.5s;
-        }
-
-        .heart-float:nth-child(9) {
-            left: 90%;
-            animation-delay: 3.5s;
-        }
+        .heart-float:nth-child(1) { left: 10%; animation-delay: 0s; }
+        .heart-float:nth-child(2) { left: 20%; animation-delay: 1s; }
+        .heart-float:nth-child(3) { left: 30%; animation-delay: 2s; }
+        .heart-float:nth-child(4) { left: 40%; animation-delay: 3s; }
+        .heart-float:nth-child(5) { left: 50%; animation-delay: 4s; }
+        .heart-float:nth-child(6) { left: 60%; animation-delay: 5s; }
+        .heart-float:nth-child(7) { left: 70%; animation-delay: 1.5s; }
+        .heart-float:nth-child(8) { left: 80%; animation-delay: 2.5s; }
+        .heart-float:nth-child(9) { left: 90%; animation-delay: 3.5s; }
 
         .card {
             background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
@@ -175,7 +93,7 @@
             padding: 40px 60px;
             border-radius: 25px;
             text-align: center;
-            box-shadow:
+            box-shadow: 
                 0 8px 32px rgba(0, 0, 0, 0.3),
                 inset 0 1px 0 rgba(255, 255, 255, 0.2),
                 0 0 20px rgba(255, 215, 0, 0.2);
@@ -227,34 +145,141 @@
             text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
         }
 
+        .login-section {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+            backdrop-filter: blur(20px);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            display: block;
+        }
+
+        .login-section.hidden {
+            display: none;
+        }
+
+        .login-title {
+            font-size: 24px;
+            color: #ffd700;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        .login-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .login-btn {
+            background: linear-gradient(45deg, #ffd700, #ff6b6b);
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .login-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
+        }
+
+        .password-input {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 10px;
+            padding: 10px 15px;
+            color: white;
+            font-size: 16px;
+            width: 200px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .password-input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .submit-btn {
+            background: linear-gradient(45deg, #4ecdc4, #45b7d1);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .message-content {
+            display: none;
+        }
+
+        .message-content.show {
+            display: block;
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: linear-gradient(45deg, #ff6b6b, #ffd700);
+            border: 2px solid rgba(255, 215, 0, 0.5);
+            border-radius: 25px;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+            z-index: 1001;
+        }
+
+        .back-btn:hover {
+            background: linear-gradient(45deg, #ffd700, #ff6b6b);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.5);
+        }
+
+        .back-btn::before {
+            content: "← ";
+            font-size: 18px;
+        }
+
         .heart {
             color: #e74c3c;
             animation: heartbeat 1.5s infinite;
         }
 
         @keyframes gradientShift {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         @keyframes logoGlow {
-
-            0%,
-            100% {
+            0%, 100% { 
                 text-shadow: 0 0 10px #ffd700;
                 transform: scale(1);
             }
-
-            50% {
+            50% { 
                 text-shadow: 0 0 20px #ffd700, 0 0 30px #ffd700;
                 transform: scale(1.05);
             }
@@ -265,15 +290,12 @@
                 transform: translateY(100vh) translateX(0px);
                 opacity: 0;
             }
-
             10% {
                 opacity: 1;
             }
-
             90% {
                 opacity: 1;
             }
-
             100% {
                 transform: translateY(-100px) translateX(50px);
                 opacity: 0;
@@ -281,17 +303,14 @@
         }
 
         @keyframes cardGlow {
-
-            0%,
-            100% {
-                box-shadow:
+            0%, 100% { 
+                box-shadow: 
                     0 8px 32px rgba(0, 0, 0, 0.3),
                     inset 0 1px 0 rgba(255, 255, 255, 0.2),
                     0 0 20px rgba(255, 215, 0, 0.2);
             }
-
-            50% {
-                box-shadow:
+            50% { 
+                box-shadow: 
                     0 8px 32px rgba(0, 0, 0, 0.3),
                     inset 0 1px 0 rgba(255, 255, 255, 0.2),
                     0 0 40px rgba(255, 215, 0, 0.4);
@@ -299,31 +318,15 @@
         }
 
         @keyframes borderGlow {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         @keyframes gradientText {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         @keyframes floatUp {
@@ -331,15 +334,12 @@
                 transform: translateY(100vh) rotate(0deg);
                 opacity: 0;
             }
-
             10% {
                 opacity: 0.7;
             }
-
             90% {
                 opacity: 0.7;
             }
-
             100% {
                 transform: translateY(-100px) rotate(360deg);
                 opacity: 0;
@@ -347,26 +347,16 @@
         }
 
         @keyframes cardFloat {
-
-            0%,
-            100% {
-                transform: translateY(0px);
-            }
-
-            50% {
-                transform: translateY(-10px);
-            }
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
         }
 
         @keyframes titleGlow {
-
-            0%,
-            100% {
+            0%, 100% { 
                 text-shadow: 0 0 5px rgba(255, 107, 107, 0.5);
                 transform: scale(1);
             }
-
-            50% {
+            50% { 
                 text-shadow: 0 0 20px rgba(255, 107, 107, 0.8);
                 transform: scale(1.02);
             }
@@ -377,7 +367,6 @@
                 opacity: 0;
                 transform: translateX(-50px);
             }
-
             100% {
                 opacity: 1;
                 transform: translateX(0);
@@ -389,7 +378,6 @@
                 opacity: 0;
                 transform: translateY(20px);
             }
-
             100% {
                 opacity: 1;
                 transform: translateY(0);
@@ -401,7 +389,6 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
-
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -409,12 +396,9 @@
         }
 
         @keyframes heartbeat {
-
-            0%,
-            100% {
+            0%, 100% {
                 transform: scale(1);
             }
-
             50% {
                 transform: scale(1.2);
             }
@@ -424,7 +408,7 @@
 
 <body>
     <div class="okivip-logo">OKVIP</div>
-
+    
     <div class="brand-particles">
         <div class="particle"></div>
         <div class="particle"></div>
@@ -439,7 +423,7 @@
         <div class="particle"></div>
         <div class="particle"></div>
     </div>
-
+    
     <div class="floating-hearts">
         <div class="heart-float">💖</div>
         <div class="heart-float">💕</div>
@@ -451,20 +435,108 @@
         <div class="heart-float">💗</div>
         <div class="heart-float">💝</div>
     </div>
-
-    <div class="card">
-        <h1>Lời chào tạm biệt 💙</h1>
-        <p>
-            A/C/B/E ở lại mạnh khỏe và làm việc thật tốt nhé!
-            <br><br> Em xin phép tạm biệt mọi người, chúc cả team luôn gắn bó, hỗ trợ nhau và hoàn thành xuất sắc mọi
-            nhiệm vụ sắp tới.
-            <br><br>
-            Cảm ơn mọi người vì quãng thời gian làm việc cùng nhau! ❤️
-            <br><br>
-            Hẹn gặp lại mọi người trong tương lai! 🤝
-        </p>
-        <p class="signature">— Với lòng biết ơn chân thành,<br> OSN JDIONVUX <span class="heart">♥</span></p>
+    
+    <!-- Login Section -->
+    <div class="login-section" id="loginSection">
+        <h2 class="login-title">Chọn lời chào tạm biệt 💙</h2>
+        <div class="login-buttons">
+            <button class="login-btn" onclick="showPasswordInput('team')">Team</button>
+            <button class="login-btn" onclick="showPasswordInput('tt')">TT</button>
+        </div>
+        <div id="passwordSection" style="display: none;">
+            <input type="password" class="password-input" id="passwordInput" placeholder="Chọn Team hoặc TT trước">
+            <br>
+            <button class="submit-btn" onclick="checkPassword()">Xác nhận</button>
+        </div>
     </div>
+
+    <!-- Team Message -->
+    <div class="message-content" id="teamMessage">
+        <div class="back-btn" onclick="goBack()">Quay lại</div>
+        <div class="card">
+            <h1>Lời chào tạm biệt Team 💙</h1>
+            <p>
+                A/C/B/E ở lại mạnh khỏe và làm việc thật tốt nhé!
+                <br><br> Em xin phép tạm biệt mọi người, chúc cả team luôn gắn bó, hỗ trợ nhau và hoàn thành xuất sắc mọi nhiệm vụ sắp tới.
+                <br><br>
+                Cảm ơn mọi người vì quãng thời gian làm việc cùng nhau! ❤️
+                <br><br>
+                Hẹn gặp lại mọi người trong tương lai! 🤝
+            </p>
+            <p class="signature">— Với lòng biết ơn chân thành,<br> OSN JDIONVUX <span class="heart">♥</span></p>
+        </div>
+    </div>
+
+    <!-- TT Message -->
+    <div class="message-content" id="ttMessage">
+        <div class="back-btn" onclick="goBack()">Quay lại</div>
+        <div class="card">
+            <h1>Lời chào tạm biệt TT 💙</h1>
+            <p>
+                Em xin chúc anh OSN EMPER luôn mạnh khỏe, thành công trong công việc và cuộc sống!❤️ <br><br>
+                Cảm ơn anh OSN EMPER đã dành thời gian hướng dẫn và hỗ trợ em trong suốt thời gian qua! 🙏<br><br>
+                
+                Chúc anh OSN EMPER luôn gặp nhiều may mắn và thành công trong mọi dự án! 💪
+            
+            </p>
+            <p class="signature">— Với lòng biết ơn chân thành,<br> OSN JDIONVUX <span class="heart">♥</span></p>
+        </div>
+    </div>
+
+    <script>
+        let currentType = '';
+        
+        function showPasswordInput(type) {
+            currentType = type;
+            const passwordInput = document.getElementById('passwordInput');
+            const passwordSection = document.getElementById('passwordSection');
+            
+            // Thay đổi placeholder dựa trên type
+            if (type === 'team') {
+                passwordInput.placeholder = 'Mật khẩu: 0000';
+            } else if (type === 'tt') {
+                passwordInput.placeholder = 'Mật khẩu: EMPER';
+            }
+            
+            passwordSection.style.display = 'block';
+            passwordInput.value = ''; // Clear input
+            passwordInput.focus();
+        }
+        
+        function checkPassword() {
+            const password = document.getElementById('passwordInput').value;
+            
+            if (currentType === 'team' && password === '0000') {
+                showMessage('team');
+            } else if (currentType === 'tt' && password === 'EMPER') {
+                showMessage('tt');
+            } else {
+                alert('Mật khẩu không đúng!');
+                document.getElementById('passwordInput').value = '';
+            }
+        }
+        
+        function showMessage(type) {
+            document.getElementById('loginSection').classList.add('hidden');
+            document.getElementById(type + 'Message').classList.add('show');
+        }
+        
+        function goBack() {
+            document.getElementById('loginSection').classList.remove('hidden');
+            document.getElementById('teamMessage').classList.remove('show');
+            document.getElementById('ttMessage').classList.remove('show');
+            document.getElementById('passwordSection').style.display = 'none';
+            document.getElementById('passwordInput').value = '';
+            currentType = '';
+        }
+        
+        // Enter key support
+        document.getElementById('passwordInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                checkPassword();
+            }
+        });
+    </script>
 </body>
 
 </html>
