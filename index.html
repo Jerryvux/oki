@@ -48,18 +48,65 @@
             animation: particleFloat 8s linear infinite;
         }
 
-        .particle:nth-child(1) { left: 10%; animation-delay: 0s; }
-        .particle:nth-child(2) { left: 20%; animation-delay: 1s; }
-        .particle:nth-child(3) { left: 30%; animation-delay: 2s; }
-        .particle:nth-child(4) { left: 40%; animation-delay: 3s; }
-        .particle:nth-child(5) { left: 50%; animation-delay: 4s; }
-        .particle:nth-child(6) { left: 60%; animation-delay: 5s; }
-        .particle:nth-child(7) { left: 70%; animation-delay: 1.5s; }
-        .particle:nth-child(8) { left: 80%; animation-delay: 2.5s; }
-        .particle:nth-child(9) { left: 90%; animation-delay: 3.5s; }
-        .particle:nth-child(10) { left: 15%; animation-delay: 0.5s; }
-        .particle:nth-child(11) { left: 25%; animation-delay: 1.5s; }
-        .particle:nth-child(12) { left: 35%; animation-delay: 2.5s; }
+        .particle:nth-child(1) {
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .particle:nth-child(2) {
+            left: 20%;
+            animation-delay: 1s;
+        }
+
+        .particle:nth-child(3) {
+            left: 30%;
+            animation-delay: 2s;
+        }
+
+        .particle:nth-child(4) {
+            left: 40%;
+            animation-delay: 3s;
+        }
+
+        .particle:nth-child(5) {
+            left: 50%;
+            animation-delay: 4s;
+        }
+
+        .particle:nth-child(6) {
+            left: 60%;
+            animation-delay: 5s;
+        }
+
+        .particle:nth-child(7) {
+            left: 70%;
+            animation-delay: 1.5s;
+        }
+
+        .particle:nth-child(8) {
+            left: 80%;
+            animation-delay: 2.5s;
+        }
+
+        .particle:nth-child(9) {
+            left: 90%;
+            animation-delay: 3.5s;
+        }
+
+        .particle:nth-child(10) {
+            left: 15%;
+            animation-delay: 0.5s;
+        }
+
+        .particle:nth-child(11) {
+            left: 25%;
+            animation-delay: 1.5s;
+        }
+
+        .particle:nth-child(12) {
+            left: 35%;
+            animation-delay: 2.5s;
+        }
 
         .floating-hearts {
             position: absolute;
@@ -76,15 +123,50 @@
             opacity: 0.7;
         }
 
-        .heart-float:nth-child(1) { left: 10%; animation-delay: 0s; }
-        .heart-float:nth-child(2) { left: 20%; animation-delay: 1s; }
-        .heart-float:nth-child(3) { left: 30%; animation-delay: 2s; }
-        .heart-float:nth-child(4) { left: 40%; animation-delay: 3s; }
-        .heart-float:nth-child(5) { left: 50%; animation-delay: 4s; }
-        .heart-float:nth-child(6) { left: 60%; animation-delay: 5s; }
-        .heart-float:nth-child(7) { left: 70%; animation-delay: 1.5s; }
-        .heart-float:nth-child(8) { left: 80%; animation-delay: 2.5s; }
-        .heart-float:nth-child(9) { left: 90%; animation-delay: 3.5s; }
+        .heart-float:nth-child(1) {
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .heart-float:nth-child(2) {
+            left: 20%;
+            animation-delay: 1s;
+        }
+
+        .heart-float:nth-child(3) {
+            left: 30%;
+            animation-delay: 2s;
+        }
+
+        .heart-float:nth-child(4) {
+            left: 40%;
+            animation-delay: 3s;
+        }
+
+        .heart-float:nth-child(5) {
+            left: 50%;
+            animation-delay: 4s;
+        }
+
+        .heart-float:nth-child(6) {
+            left: 60%;
+            animation-delay: 5s;
+        }
+
+        .heart-float:nth-child(7) {
+            left: 70%;
+            animation-delay: 1.5s;
+        }
+
+        .heart-float:nth-child(8) {
+            left: 80%;
+            animation-delay: 2.5s;
+        }
+
+        .heart-float:nth-child(9) {
+            left: 90%;
+            animation-delay: 3.5s;
+        }
 
         .card {
             background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
@@ -93,7 +175,7 @@
             padding: 40px 60px;
             border-radius: 25px;
             text-align: center;
-            box-shadow: 
+            box-shadow:
                 0 8px 32px rgba(0, 0, 0, 0.3),
                 inset 0 1px 0 rgba(255, 255, 255, 0.2),
                 0 0 20px rgba(255, 215, 0, 0.2);
@@ -151,17 +233,28 @@
         }
 
         @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         @keyframes logoGlow {
-            0%, 100% { 
+
+            0%,
+            100% {
                 text-shadow: 0 0 10px #ffd700;
                 transform: scale(1);
             }
-            50% { 
+
+            50% {
                 text-shadow: 0 0 20px #ffd700, 0 0 30px #ffd700;
                 transform: scale(1.05);
             }
@@ -172,12 +265,15 @@
                 transform: translateY(100vh) translateX(0px);
                 opacity: 0;
             }
+
             10% {
                 opacity: 1;
             }
+
             90% {
                 opacity: 1;
             }
+
             100% {
                 transform: translateY(-100px) translateX(50px);
                 opacity: 0;
@@ -185,14 +281,17 @@
         }
 
         @keyframes cardGlow {
-            0%, 100% { 
-                box-shadow: 
+
+            0%,
+            100% {
+                box-shadow:
                     0 8px 32px rgba(0, 0, 0, 0.3),
                     inset 0 1px 0 rgba(255, 255, 255, 0.2),
                     0 0 20px rgba(255, 215, 0, 0.2);
             }
-            50% { 
-                box-shadow: 
+
+            50% {
+                box-shadow:
                     0 8px 32px rgba(0, 0, 0, 0.3),
                     inset 0 1px 0 rgba(255, 255, 255, 0.2),
                     0 0 40px rgba(255, 215, 0, 0.4);
@@ -200,15 +299,31 @@
         }
 
         @keyframes borderGlow {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         @keyframes gradientText {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         @keyframes floatUp {
@@ -216,12 +331,15 @@
                 transform: translateY(100vh) rotate(0deg);
                 opacity: 0;
             }
+
             10% {
                 opacity: 0.7;
             }
+
             90% {
                 opacity: 0.7;
             }
+
             100% {
                 transform: translateY(-100px) rotate(360deg);
                 opacity: 0;
@@ -229,16 +347,26 @@
         }
 
         @keyframes cardFloat {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
         }
 
         @keyframes titleGlow {
-            0%, 100% { 
+
+            0%,
+            100% {
                 text-shadow: 0 0 5px rgba(255, 107, 107, 0.5);
                 transform: scale(1);
             }
-            50% { 
+
+            50% {
                 text-shadow: 0 0 20px rgba(255, 107, 107, 0.8);
                 transform: scale(1.02);
             }
@@ -249,6 +377,7 @@
                 opacity: 0;
                 transform: translateX(-50px);
             }
+
             100% {
                 opacity: 1;
                 transform: translateX(0);
@@ -260,6 +389,7 @@
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             100% {
                 opacity: 1;
                 transform: translateY(0);
@@ -271,6 +401,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -278,9 +409,12 @@
         }
 
         @keyframes heartbeat {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: scale(1);
             }
+
             50% {
                 transform: scale(1.2);
             }
@@ -290,7 +424,7 @@
 
 <body>
     <div class="okivip-logo">OKIVIP</div>
-    
+
     <div class="brand-particles">
         <div class="particle"></div>
         <div class="particle"></div>
@@ -305,7 +439,7 @@
         <div class="particle"></div>
         <div class="particle"></div>
     </div>
-    
+
     <div class="floating-hearts">
         <div class="heart-float">💖</div>
         <div class="heart-float">💕</div>
@@ -317,14 +451,14 @@
         <div class="heart-float">💗</div>
         <div class="heart-float">💝</div>
     </div>
-    
+
     <div class="card">
         <h1>Lời chào tạm biệt 💙</h1>
         <p>
-            Xin chào tạm biệt tất cả mọi người!<br><br>
-            
+
             A/C/B/E ở lại mạnh khỏe và làm việc thật tốt nhé!
-            <br><br> Em xin phép tạm biệt mọi người, chúc cả team luôn gắn bó, hỗ trợ nhau và hoàn thành xuất sắc mọi nhiệm vụ sắp tới.
+            <br><br> Em xin phép tạm biệt mọi người, chúc cả team luôn gắn bó, hỗ trợ nhau và hoàn thành xuất sắc mọi
+            nhiệm vụ sắp tới.
             <br><br>
             Cảm ơn mọi người vì quãng thời gian làm việc cùng nhau! ❤️
             <br><br>
